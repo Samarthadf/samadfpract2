@@ -1,0 +1,28 @@
+{
+	"name": "DelimitedText1DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1LS1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "marketing_sales_data.csv",
+				"container": "sourcevcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "This is the sales data related to the customers.\t\t\t\t\t\t",
+				"type": "String"
+			}
+		]
+	}
+}
